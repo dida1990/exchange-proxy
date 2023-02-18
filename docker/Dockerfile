@@ -1,4 +1,4 @@
-FROM golang:1.17.4-alpine3.15 as builder
+FROM golang:1.17.4-alpine3.15@sha256:d8bd35607c405fcef71d749aa367f86954706c3a57a602fb0bcaae3581043f8f as builder
 
 RUN apk --no-cache add gcc musl-dev make && go get github.com/mailru/easyjson && go install github.com/mailru/easyjson/...@latest
 
