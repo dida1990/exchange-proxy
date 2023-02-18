@@ -8,7 +8,7 @@ ARG VERSION=dev
 
 RUN cd /src && make generate && go build -o /src/bin/proxy -ldflags "-s -w -X main.version=$VERSION"
 
-FROM alpine:3.15
+FROM alpine:3.15@sha256:689659b1f08e9fdfb85190144098c378beb5a53b328f7ced7883a74a1157c709
 
 RUN adduser -g "proxy" -D -H proxy proxy
 
