@@ -3,7 +3,7 @@
 ### Local
 
 ```shell
-git clone https://github.com/mikekonan/exchange-proxy.git
+git clone https://github.com/dida1990/exchange-proxy.git
 make build
 ./exchange-proxy -port 8080 -verbose 1
 ```
@@ -39,7 +39,7 @@ make build
 ###### Use different tags for different platforms e.g. - latest-amd64, latest-arm-v6, latest-arm-v7, latest-arm64
 
 ```shell
-docker run --restart=always -p 127.0.0.1:8080:8080 --name exchange-proxy -d mikekonan/exchange-proxy:latest-amd64
+docker run --restart=always -p 127.0.0.1:8080:8080 --name exchange-proxy -d dida1990/exchange-proxy:v1.2.7
 ```
 
 #### config.json
@@ -76,7 +76,7 @@ See example - [docker-compose.yml](freqtrade-docker-compose.yml)
 
 ```yaml
   exchange-proxy:
-    image: mikekonan/exchange-proxy:latest-amd64
+    image: dida1990/exchange-proxy:v1.2.7
     restart: unless-stopped
     container_name: exchange-proxy
     command: -verbose 1
