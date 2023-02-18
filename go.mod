@@ -16,7 +16,7 @@ require (
 	github.com/sirupsen/logrus v1.4.1
 	github.com/spf13/cast v1.3.0
 	github.com/stretchr/testify v1.7.0 // indirect
-	github.com/valyala/fasthttp v1.29.0
+	github.com/valyala/fasthttp v1.34.1
 	go.uber.org/ratelimit v0.2.0
 	golang.org/x/sys v0.0.0-20211007075335-d3039528d8ac // indirect
 )
