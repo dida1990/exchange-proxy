@@ -16,6 +16,27 @@ Optimal run parameters for NFIX2
 ```shell
 dist/exchange-proxy -port 9000 -kucoin-topics-per-ws 10 -ttl-cache-timeout 30m0s -verbose 0
 ```
+#### Configuration
+Add these lines to your config
+```shell
+{
+    "exchange": {
+        "ccxt_config": {
+            "enableRateLimit": false,
+            "timeout": 60000,
+            "urls": {
+                "api": {
+                  "public": "http://127.0.0.1:9000/kucoin",
+                  "private": "http://127.0.0.1:9000/kucoin"
+        }
+      }},
+        "ccxt_async_config": {
+            "enableRateLimit": false,
+            "timeout": 60000
+        }
+    }
+}
+```
 ### Docker Compose
 Add the following lines to your docker-compose.yml
 ```shell
@@ -25,14 +46,37 @@ Add the following lines to your docker-compose.yml
     container_name: exchange-proxy
     command: >
       -verbose 1
+      -port 9000
       -kucoin-topics-per-ws 10
       -ttl-cache-timeout 30m0s
+```
+#### Configuration
+Add these lines to your config
+```shell
+{
+    "exchange": {
+        "ccxt_config": {
+            "enableRateLimit": false,
+            "timeout": 60000,
+            "urls": {
+                "api": {
+                  "public": "http://exchange-proxy:9000/kucoin",
+                  "private": "http://exchange-proxy:9000/kucoin"
+        }
+      }},
+        "ccxt_async_config": {
+            "enableRateLimit": false,
+            "timeout": 60000
+        }
+    }
+}
 ```
 Then just
 ```shell
 docker compose pull
 docker compose up -d
 ```
+
 
 ## OPS
 
