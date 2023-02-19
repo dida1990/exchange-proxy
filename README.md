@@ -15,6 +15,12 @@ ulimit -Hn 10000
 
 ## Installation
 ### Local
+#### Prerequisites
+```shell
+sudo apt-get install golang-go
+sudo apt-get install golang-easyjson
+```
+#### Main part
 ```shell
 git clone https://github.com/dida1990/exchange-proxy
 cd exchange-proxy
