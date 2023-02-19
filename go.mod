@@ -10,7 +10,7 @@ require (
 	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 	github.com/golang/gddo v0.0.0-20210115222349-20d68f94ee1f // indirect
 	github.com/google/uuid v1.3.0
-	github.com/jaffee/commandeer v0.6.0
+	github.com/jaffee/commandeer v0.5.0
 	github.com/mailru/easyjson v0.7.7
 	github.com/qiangxue/fasthttp-routing v0.0.0-20160225050629-6ccdc2a18d87
 	github.com/sirupsen/logrus v1.4.1
