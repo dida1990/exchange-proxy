@@ -20,7 +20,7 @@ dist/exchange-proxy -port 9000 -kucoin-topics-per-ws 10 -ttl-cache-timeout 30m0s
 Add the following lines to your docker-compose.yml
 ```shell
   exchange-proxy:
-    image: dida1990/exchange-proxy:v1.2.10-test
+    image: dida1990/exchange-proxy:v1.2.9
     restart: unless-stopped
     container_name: exchange-proxy
     command: >
