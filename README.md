@@ -4,7 +4,7 @@ Exchange proxy using WebSockets to maintain candlestick/klines data in memory, t
 There is no warranty of correct working. You take all risks of using this.
 All improvements are made by me on a voluntary basis in my spare time.
 
-##Installation
+## Installation
 ### Local
 ```shell
 git clone https://github.com/dida1990/exchange-proxy
