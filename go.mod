@@ -6,7 +6,7 @@ require (
 	github.com/Gurpartap/logrus-stack v0.0.0-20170710170904-89c00d8a28f4
 	github.com/dgrr/websocket v0.1.1
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 // indirect
-	github.com/go-ozzo/ozzo-routing v2.4.0 // indirect
+	github.com/go-ozzo/ozzo-routing v2.1.4+incompatible // indirect
 	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 	github.com/golang/gddo v0.0.0-20210115222349-20d68f94ee1f // indirect
 	github.com/google/uuid v1.3.0
