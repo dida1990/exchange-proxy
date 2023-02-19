@@ -4,6 +4,36 @@ Exchange proxy using WebSockets to maintain candlestick/klines data in memory, t
 There is no warranty of correct working. You take all risks of using this.
 All improvements are made by me on a voluntary basis in my spare time.
 
+##Installation
+### Local
+```shell
+git clone https://github.com/dida1990/exchange-proxy
+cd exchange-proxy
+make build
+```
+
+Optimal run parameters for NFIX2
+```shell
+dist/exchange-proxy -port 9000 -kucoin-topics-per-ws 10 -ttl-cache-timeout 30m0s -verbose 0
+```
+### Docker Compose
+Add the following lines to your docker-compose.yml
+```shell
+  exchange-proxy:
+    image: dida1990/exchange-proxy:v1.2.10-test
+    restart: unless-stopped
+    container_name: exchange-proxy
+    command: >
+      -verbose 1
+      -kucoin-topics-per-ws 10
+      -ttl-cache-timeout 30m0s
+```
+Then just
+```shell
+docker compose pull
+docker compose up -d
+```
+
 ## OPS
 
 ### Usage
