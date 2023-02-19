@@ -4,6 +4,15 @@ Exchange proxy using WebSockets to maintain candlestick/klines data in memory, t
 There is no warranty of correct working. You take all risks of using this.
 All improvements are made by me on a voluntary basis in my spare time.
 
+## Note
+If you want to run more than a few pairs (50+) it is advised you crank your ulimit up **before** starting the exchange-proxy, otherwise you will get 509 errors leading to crashes of exchange-proxy
+```shell
+ulimit -n 10000
+ulimit -Hn 10000
+```
+
+
+
 ## Installation
 ### Local
 ```shell
