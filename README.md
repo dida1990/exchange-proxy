@@ -52,7 +52,7 @@ Add these lines to your config
     }
 }
 ```
-### Docker Compose
+### Docker Compose (just AMD64 currently)
 Add the following lines to your docker-compose.yml
 ```shell
   exchange-proxy:
